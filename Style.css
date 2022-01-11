@@ -1,0 +1,972 @@
+*{
+	box-sizing: border-box;
+}
+html,body{
+	font-family: Raleway;
+	padding: 0px;
+	margin: 0px;
+}
+.Blocpage{
+	max-width: 1400px;
+	margin: 0 auto;
+	padding-left: 15px;
+	padding-right: 15px;
+}
+.colorBleu{
+	color: #0065FC;
+}
+.colorWhite{
+	color: #F2F2F2;
+}
+/*Pour le logo*/
+
+.Principal{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding-top: 20px;
+}
+.Logo{
+	padding-bottom: 20px;
+}
+
+/*Bouton Héberge...*/
+
+.Bouton{
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	width: 30%;
+	margin: 15px;
+	height: 60px;
+}
+.B1{
+	text-decoration: none;
+	color: #0065FC;
+	border-top: 1px solid blue;
+	padding-top: 22px;
+	margin-right: 25px;
+}
+.B2{
+	text-decoration: none;
+	color: black;
+}
+.Size:hover >.B2{
+	text-decoration: none;
+	color: #0065FC;
+	border-top: 1px solid blue;
+	padding-top: 22px;
+	margin-right: 25px;
+}
+.Size{
+	width: 60%;
+	height: 20px;
+	margin-top: -65px;
+}
+.Texte{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.SizeText{
+	font-size: 10px;
+}
+.HauteurTexte{
+	margin-top: -50px;
+}
+
+/*Barre de recherche */
+
+.Search1{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.Search2{
+	height: 50px;
+	width: 230px;
+	font-size: 18px;
+	color: black;
+	font-weight: bold;
+}
+.BordureSearch{
+	width: 380px;
+	border-radius: 10px;
+	border: 0.5px solid #f2f2f2;
+}
+.BordureNone{
+	border: none;
+}
+.PSearch{
+	padding-left: 20px;
+}
+.IconSearch{
+	height: 50px;
+	width: 50px;
+	border-radius: 10px 0 0 10px;
+	background-color: #F2F2F2;
+}
+.BSearch{
+	background-color: #0065fc;
+	height: 50px;
+	width: 100px;
+	color: white;
+	cursor: pointer;
+	border-radius: 0 10px 10px 0;
+	border: none;
+}
+
+.ResponsiveIcone{
+	display: none;
+}
+
+/*Filtres */
+
+.Filtres{
+	display: flex;
+	align-items: center;
+}
+.MargF{
+	margin-top: 30px;
+	margin-bottom: 40px;
+}
+.Titre{
+	margin-right: 30px;
+}
+.IconsFiltres{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	border: 2px solid #f2f2f2;
+	border-radius: 30px;
+	margin-right: 20px;
+}
+.IconsFiltres:hover >.FiltresTexte{
+	color: #0065fc;
+}
+.IconsFiltres:hover > .IconsColor{
+	color: white;
+	background-color: #0065fc;
+}
+.FiltresTexte{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 50px;
+	padding-left: 20px;
+	padding-right: 20px;
+	border-radius: 0 25px 25px 0;
+}
+.IconsColor{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 25px;
+	width: 52px;
+	height: 52px;
+	color: #0065fc;
+	background-color: #deebff; 
+}
+
+/* Ceci est pour l'îcone info */
+
+.Info{
+	display: flex;
+	align-items: center;
+	margin-top: -10px;
+}
+.ColorInfo{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 20px;
+	height: 20px;
+	border: 2px solid #f2f2f2;
+	border-radius: 25px;
+	margin-right: 5px;
+	color: #0065fc;
+}
+
+/* Photo Héberments */
+
+.PrincipalH{
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	margin-top: 60px;
+}
+.SizeH{
+	flex: 2;
+	height: 610px;
+	margin-right: 20px;
+	border-radius: 10px;
+	background-color: #F2F2F2;
+}
+.BlocH{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+.CubeH{
+	width: 30%;
+	height: 190px;
+	background-color: white;
+	padding: 1%;
+	border-radius: 20px;
+}
+.CubeDetailsH{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	width: 150%;
+	margin-top: -10px;
+	font-size: 13px;
+}
+.PositionTexte{
+	margin-top: -25px;
+}
+.PositionEtoile{
+	margin-top: -12px;
+}
+.ImageH1{
+	background-image: url("Photo/Hôtel Cannebière.jpg");
+	background-size: cover;
+	background-position: center;
+	width: 100%;
+	height: 120px;
+	border-radius: 15px 15px 0 0;
+	margin-top: -5px;
+}
+.ImageH2{
+	background-image: url("Photo/Hôtel du port.jpg");
+	background-size: cover;
+	background-position: center;
+	width: 100%;
+	height: 120px;
+	border-radius: 15px 15px 0 0;
+	margin-top: -5px;
+}
+.ImageH3{
+	background-image: url("Photo/Hôtel les mouettes.jpg");
+	background-size: cover;
+	background-position: center;
+	width: 100%;
+	height: 120px;
+	border-radius: 15px 15px 0 0;
+	margin-top: -5px;
+}
+.ImageH4{
+	background-image: url("Photo/Hôtel de la mer.jpg");
+	background-size: cover;
+	background-position: center;
+	width: 100%;
+	height: 120px;
+	border-radius: 15px 15px 0 0;
+	margin-top: -5px;
+}
+.ImageH5{
+	background-image: url("Photo/Auberge le Panier.jpg");
+	background-size: cover;
+	background-position: center;
+	width: 100%;
+	height: 120px;
+	border-radius: 15px 15px 0 0;
+	margin-top: -5px;
+}
+.ImageH6{
+	background-image: url("Photo/Hôtel chez Amina.jpg");
+	background-size: cover;
+	background-position: center;
+	width: 100%;
+	height: 120px;
+	border-radius: 15px 15px 0 0;
+	margin-top: -5px;
+}
+.Bloc1{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-bottom: 5px;
+}
+.Bloc2{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-top: -5px;
+}
+.TexteGras{
+	font-weight: bold;
+}
+
+/* Les plus populaires*/
+
+.Populaire{
+	flex: 1;
+	height: 610px;
+	margin-left: 20px;
+	border-radius: 10px;
+	padding-left: 20px;
+	padding-right: 20px;
+	background-color: #F2F2F2;
+}
+.TextePopulaire{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.TextePositionP{
+	margin-top: -5%;
+}
+.PositionEtoileP13{
+	margin-top: 55px;
+}
+.PositionEtoileP2{
+	margin-top: 45px;
+}
+.CubeP{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: white;
+	height: 155px;
+	border-radius: 20px;
+}
+.CubeDetailsP{
+	width: 63%;
+	padding-left: 5%;
+}
+.ColonneP{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+}
+.BlocP12{
+	margin-bottom: 22px;
+}
+.ImageP1{
+	background-image: url("Photo/Hôtel le soleil du matin.jpg");
+	background-size: cover;
+	background-position: center;
+	width: 35%;
+	height: 145px;
+	border-radius: 15px 0 0 15px;
+}
+.ImageP2{
+	background-image: url("Photo/Au coeur de l'eau chambre d'hôtes.jpg");
+	background-size: cover;
+	background-position: center;
+	width: 35%;
+	height: 145px;
+	border-radius: 15px 0 0 15px;
+}
+.ImageP3{
+	background-image: url("Photo/Hôtel tout bleu et blanc.jpg");
+	background-size: cover;
+	background-position: center;
+	width: 35%;
+	height: 145px;
+	border-radius: 15px 0 0 15px;
+}
+
+/* Activtés à Marseille*/
+
+.Activités{ 
+	margin-top: 50px;
+	margin-bottom: 50px;
+}
+.HauteurTitre{
+	height: 70px;
+}
+.TitreActivités{
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	padding-left: 5%;
+	width: 95%;
+}
+.SizeA1{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 100%;
+	height: 600px;
+	margin-right: 20px;
+	border-radius: 10px;
+}
+.SizeA2356{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	width: 22%;
+	height: 600px;
+	margin-right: 20px;
+	border-radius: 10px;
+}
+.CubeA{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 22%;
+	border-radius: 15px;
+	box-shadow: 5px 5px 5px 1px #F2F2F2;
+	cursor: pointer;
+}
+.CubeA2356{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 105%;
+	border-radius: 15px;
+	box-shadow: 5px 5px 5px 1px #F2F2F2;
+}
+.HauteurTitre{
+	height: 70px;
+}
+.TitreActivités{
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	padding-left: 15%;
+	width: 95%;
+}
+.ImageA1{
+	background-image: url("Photo/Vieux port.jpg");
+	background-size: cover;
+	background-position: center;
+	width: 100%;
+	height: 530px;
+	border-radius: 15px 15px 0 0;
+}
+.ImageA2{
+	background-image: url("Photo/Fort de Pomègues.jpg");
+	background-size: cover;
+	background-position: center;
+	width: 100%;
+	height: 250px;
+	border-radius: 15px 15px 0 0;
+}
+.ImageA3{
+	background-image: url("Photo/Îles du Frioul.jpg");
+	background-size: cover;
+	background-position: center;
+	width: 100%;
+	height: 150px;
+	border-radius: 15px 15px 0 0;
+}
+.ImageA4{
+	background-image: url("Photo/Parc National des Calanques.jpg");
+	background-size: cover;
+	background-position: center;
+	width: 100%;
+	height: 530px;
+	border-radius: 15px 15px 0 0;
+}
+.ImageA5{
+	background-image: url("Photo/Notre-Dame-de-la-Garde.jpg");
+	background-size: cover;
+	background-position: center;
+	width: 100%;
+	height: 200px;
+	border-radius: 15px 15px 0 0;
+}
+.ImageA6{
+	background-image: url("Photo/Parc Longchamp.jpg");
+	background-size: cover;
+	background-position: center;
+	width: 100%;
+	height: 200px;
+	border-radius: 15px 15px 0 0;
+}
+
+/* Bas de page */
+.BasDePage{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex: 1;
+	margin-top: 100px;
+	border-radius: 10px;
+	background-color: #F2F2F2;
+}
+.TailleBloc{
+	margin-top: 30px;
+	height: 190px;
+}
+.MargeBloc1{
+	margin-left: 14%;
+}
+.MargeBloc3{
+	margin-right: 30%;
+}
+.DécorationBas{
+	text-decoration: none;
+	color: black ;
+}
+.EspacementBas{
+	height: 30px;
+}
+
+/* Responsive tablette */
+
+@media screen and (max-width: 991px){
+
+	.Blocpage{
+	max-width: 992px;
+	margin: 0 auto;
+	padding-left: 15px;
+	padding-right: 15px;
+}
+
+/* Header */
+
+	.Logo{
+		font-size: 100px;
+		margin-top: -25px;
+	}
+	
+	.Bouton{
+		margin-top: -6px;
+	}
+
+	.Size{
+		margin-left: 10%;
+	}
+
+	.Size:hover >.B2{
+	text-decoration: none;
+	color: #0065FC;
+	border-top: 1px solid blue;
+	padding-top: 22px;
+	margin-right: 25px;
+	}
+
+	.Titre{
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+	}
+
+	.IconsFiltres{
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		margin-top: 10px;
+	}
+
+	.FiltresTexte{
+		margin-left: 14px;
+	}
+
+/* Hébergement */
+
+	.PrincipalH{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-top: 60px;
+	width: 850px;
+	}
+
+	.SizeH{
+		flex: 2;
+		width: 850px;
+		height: 600px;
+		margin-top: 5px ;
+		margin-left: 5px;
+	}
+
+	.CubeH{
+		margin-top: 25px;
+	}
+
+	.CubeDetailsH{
+		height: 80px;
+		width: 110px;
+		font-size: 12px;
+	}
+
+/* Populaire */
+
+	.Populaire{
+		flex: 1.1;
+		height: 600px;
+		margin-right: 10px;
+	}
+
+	.TextePositionP{
+		font-size: 15px;
+	}
+
+/* Activités */
+
+	.Activités{
+		margin-left: 100px;
+	}
+
+/* Footer */
+
+	.BasDePage{
+		width: 120%;
+	}
+
+	.MargeBloc1{
+		margin-left: 130px;	
+	}
+
+	.MargeBloc2{
+		margin-left: -20px;	
+	}
+
+	.MargeBloc3{
+		margin-right: 160px;
+	}
+}
+
+@media screen and (max-width: 767px){
+
+/* Header */
+
+	.Logo{
+		margin-right: 40px;
+	}
+
+	.Principal{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-left: 80px;
+	}
+
+	.Bouton{
+	margin-top: -30px;
+	width: 500px;
+	height: 40px;
+	margin: 50px;
+	padding: 0px 15px 10px 0px; 
+	border: 1px solid #eeee;
+	margin-left:20px;
+	}
+
+	.Size{
+	width: 60%;
+	height: 90px;
+	margin-top: -5px;
+	font-size: 20px;
+	}
+
+	.B1{
+	text-decoration: none;
+	color: #0065FC;
+	border-top-style: none;
+	border-bottom: 3px solid #0065FC;
+	padding-bottom: 10px;
+	margin-right: 25px;
+	}
+
+	.Size:hover >.B2{
+	text-decoration: none;
+	color: #0065FC;
+	border-top-style: none;
+	border-bottom: 3px solid #0065FC;
+	padding-bottom: 10px;
+	margin-right: 25px;
+	}
+
+	.B2{
+	text-decoration: none;
+	color: black;
+	}
+
+	.ResponsiveIcone{
+		display: flex;
+	}
+
+	.ResponsiveRecherche{
+		display: none;
+	}
+
+	.Texte1{
+		font-size: 21px;
+		margin-left: 35px;
+		margin-top: -5px;
+	}
+
+	.HauteurTexte{
+		margin-top: -80px;
+	}
+
+	.Texte2{
+		margin-left: 35px;
+		margin-top: -10px;
+	}
+
+/* Barre de recherche */
+
+	.BordureSearch{
+		width: 335px;
+		margin-left: 40px;
+	}
+
+	.BSearch{
+		width: 50px;
+		border-radius: 10px 10px 10px 10px;
+	}
+
+/* Filtres */ 
+
+.Filtres{
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	height: 275px;
+}
+.MargF{
+	margin-top: 30px;
+	margin-bottom: 40px;
+}
+.Titre{
+	margin-right: 30px;
+}
+.IconsFiltres{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 190px;
+	height: 50px;
+	border: 2px solid #f2f2f2;
+	border-radius: 30px;
+	margin-right: 20px;
+	margin-left: 5px;
+}
+.FiltresTexte{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 50px;
+	padding-left: 20px;
+	padding-right: 20px;
+	margin-left: 50px;
+	margin-top: -50px;
+	border-radius: 0 25px 25px 0;
+	font-weight: bold;
+}
+.IconsColor{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-right: 140px;
+	border-radius: 25px;
+	width: 52px;
+	height: 50px;
+	color: #0065fc;
+	background-color: #deebff; 
+}
+.Icone2{
+	margin-left: 200px;
+	margin-top: -50px;
+}
+
+.Icone4{
+	width: 230px;
+}
+.IconeC4{
+	margin-right: 180px;
+}
+
+/* Ceci est pour l'îcone info */
+ 
+	.Info{
+		margin-top: -60px;
+	}
+
+	.ColorInfo{
+		margin-top: -25px;
+		margin-right: 15px;
+	}
+
+/* Hébergements */
+
+	.PrincipalH{
+	display: flex;
+	flex-direction: column-reverse;
+	align-items: center;
+	margin-top: 60px;
+	width: 500px;
+	}
+
+	.SizeH{
+		flex: 0.2;
+		width: 410px;
+		height: 600px;
+		margin-top: 5px ;
+		margin-right: 110px;
+		background: transparent;
+	}
+
+	.Bloc1{
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.Bloc2{
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.CubeH{
+		width: 400px;
+		height: 190px;
+		margin-top: 15px;
+	}
+
+	.CubeDetailsH{
+		width: 200px;
+		margin-top: -15px;
+		font-size: 12px;
+		margin-left: 10px;
+	}
+
+	.PositionTexte{
+		margin-top: -22px;
+	}
+
+	.PositionEtoile{
+		margin-top: -8px;
+	}
+
+	.ImageH1{
+		margin-top: 0.1px;
+	}
+	.ImageH2{
+		margin-top: 0.1px;
+	}
+	.ImageH3{
+		margin-top: 0.1px;
+	}
+	.ImageH4{
+		margin-top: 0.1px;
+	}
+	.ImageH5{
+		margin-top: 0.1px;
+	}
+	.ImageH6{
+		margin-top: 0.1px;
+	}
+/* Populaire */
+
+	.Populaire{
+		flex: 0.5;
+		width: 410px;
+		height: 400px;
+		margin-right: 125px;
+		margin-top: -30px;
+	}
+
+	.TextePopulaire{
+		margin-top: 30px;
+		font-size: 20px;
+	}
+
+	.IconeP{
+		font-size: 25px;
+	}
+
+	.ColonneP{
+		height: 540px;
+	}
+
+	.CubeP{
+		width: 400px;
+		margin-top: 5px ;
+		margin-bottom: 15px;
+		margin-left: -15px;
+	}
+
+	.Bloc23{
+		margin-top: -10px;
+	}
+
+	.TextePositionP{
+		font-size: 16px;
+	}
+
+/* Activités à marseille */
+
+	.Activités{
+		margin-left: -15px;
+		height: 1500px;	
+		width: 425px;
+	}
+
+	.SizeA1{
+		flex-direction: column;
+	}
+
+	.SizeA2356{
+		flex-direction: column;
+		margin-right: 320px;
+	}
+
+	.CubeA{
+		margin-top: 10px;
+		width: 101%;
+		height: 220px;
+		margin-right: -1px;
+	}
+
+	.CubeA2356{
+		margin-top: 15px;
+		width: 430px;
+		height: 220px;
+		margin-left: -9px;
+	}
+
+	.ImageA1{
+		width: 100%;
+	}
+
+	.ImageA4{
+		width: 100%;
+	}
+
+	.TitreActivités{
+		margin-right: 100px;
+	}
+
+	.TritresActivités1{
+		margin-right: 300px;
+	}
+
+	.TritresActivités4{
+		margin-right: 140px;
+	}
+/* Footer */
+	
+	.BasDePage{
+		flex-direction: column;
+		align-items: flex-start;
+		margin-top: -20px;
+	}
+
+	.TailleBloc{
+		margin-top: 10px;
+	}
+
+	.MargeBloc1{
+		margin-left: 20px;
+	}
+
+	.MargeBloc2{
+		margin-left: 20px;
+		margin-top: -30px;
+	}
+
+	.MargeBloc3{
+		margin-left: 25px;
+		margin-top: -60px;
+	}
+}
